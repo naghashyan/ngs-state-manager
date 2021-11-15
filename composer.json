@@ -1,0 +1,26 @@
+{
+  "name": "naghashyan/ngs-state-manager",
+  "type": "library",
+  "description": "Manage DTOs state change functional",
+  "keywords": [
+    "framework",
+    "state-manager"
+  ],
+  "homepage": "https://ngsframework.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Naghashyan Solutions LLC",
+      "email": "info@naghashyan.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.0",
+    "naghashyan/ngs-php-framework": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ngs\\NgsStateManager\\": "src/"
+    }
+  }
+}
