@@ -8,6 +8,7 @@ To create state manager instance you should use NgsStateManagerFactory. It has 2
 1. createJsonStateManager this function should get 2 parameters: $statesConfigs, $ngsStateableMapper
     $statesConfigs is array which will help to library to understand which next states has current state, and who can change state
     $statesConfigs structure should be like this:
+    
     [
       "states" => [
         [
@@ -23,7 +24,6 @@ To create state manager instance you should use NgsStateManagerFactory. It has 2
               "userGroups" => ["userGroup1"]
             ]
           ],
-
           "beforeActions": ["URL1", "URL2"],  //list of urls which will be called before state change functional
           "afterActions": ["URL3"] //list of urls which will be called after state change functional
         ],
