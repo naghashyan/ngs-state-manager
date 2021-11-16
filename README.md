@@ -1,11 +1,12 @@
 # ngs-state-manager
 Naghashyan State Management Library
+
 This library used for help state management, it will control if object state can be changed from X -> Y.
 To create state manager instance you should use NgsStateManagerFactory. It has 2 static methods:
 
 
 
-1. createJsonStateManager this function should get 2 parameters: $statesConfigs, $ngsStateableMapper
+1. # createJsonStateManager this function should get 2 parameters: $statesConfigs, $ngsStateableMapper
     $statesConfigs is array which will help to library to understand which next states has current state, and who can change state
     $statesConfigs structure should be like this:
     
@@ -35,7 +36,6 @@ To create state manager instance you should use NgsStateManagerFactory. It has 2
               "name" => "state3",
               "userGroups" => ["userGroup2"]
             }
-
           ],
           "beforeActions" => [],
           "afterActions" => ["URL3"]
