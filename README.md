@@ -6,9 +6,9 @@ To create state manager instance you should use NgsStateManagerFactory. It has 2
 
 
 
-1. # createJsonStateManager this function should get 2 parameters: $statesConfigs, $ngsStateableMapper
-    $statesConfigs is array which will help to library to understand which next states has current state, and who can change state
-    $statesConfigs structure should be like this:
+# 1. createJsonStateManager this function should get 2 parameters: $statesConfigs, $ngsStateableMapper
+#    $statesConfigs is array which will help to library to understand which next states has current state, and who can change state
+#    $statesConfigs structure should be like this:
     
     [
       "states" => [
@@ -59,8 +59,8 @@ To create state manager instance you should use NgsStateManagerFactory. It has 2
 
 
 
-2. createDbStateManager this function should get $ngsStateableMapper as parameter
-   $ngsStateableMapper is mapper of object, to work with this library, mapper should implement INgsStateableMapper interface
+# 2. createDbStateManager this function should get $ngsStateableMapper as parameter
+#   $ngsStateableMapper is mapper of object, to work with this library, mapper should implement INgsStateableMapper interface
 
    createDbStateManager function after call will return instance of NgsDBStateManager
    this manager to understand state change ruls uses table ngs_states the row of table should has this columns:
